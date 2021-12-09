@@ -1,0 +1,30 @@
+#!/bin/bash -x
+echo "Enter 5 3-digit numbers:";
+num1=$((99+RANDOM%900));
+num2=$((99+RANDOM%900));
+num3=$((99+RANDOM%900));
+num4=$((99+RANDOM%900));
+num5=$((99+RANDOM%900));
+
+if [ $num2 -gt $max -a $num3 -gt $max -a $num4 -gt $max -a $num5 -gt $max]
+then
+        max=$num2
+elif [ $num3 -gt $max -a $num3 -gt $num4 -a $num3 -gt $num5 -a $num3 -gt $num2 ]
+then
+        max=$num3
+elif [ $num4 -gt $max -a $num4 -gt $num2 -a $num4 -gt $num5 -a $num4 -gt $num3 ]
+then
+        max=$num4
+elif [ $num5 -gt $max -a $num5 -gt $num2 -a $num5 -gt $num4 -a $num5 -gt $num3 ]
+then
+      -lt $num2 ]
+then
+        min=$num3
+elif [ $num4 -lt $min -a $num4 -lt $num2 -a $num4 -lt $num5 -a $num4 -lt $num3 ]
+then
+        min=$num4
+elif [ $num5 -lt $min -a $num5 -lt $num2 -a $num5 -lt $num4 -a $num5 -lt $num3 ]
+then
+        min=$num5
+
+echo $min

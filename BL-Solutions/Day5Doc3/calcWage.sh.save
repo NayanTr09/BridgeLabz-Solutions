@@ -1,0 +1,10 @@
+#!/bin/bash -x
+isPresent=1;
+randomCheck=$((1+RANDOM%2));
+if [ $isPresent -eq $randomCheck ];
+then
+	empRatePH=20;
+empHrs=8;
+salary=$(($empHrs*$empRatePH));
+else
+	salary=0;

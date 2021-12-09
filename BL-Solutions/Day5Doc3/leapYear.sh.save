@@ -1,0 +1,17 @@
+#!/bin/bas/h -x
+echo "Enter a year to check if it is leap or not: "
+read year;
+leap=false;
+if [ $year%4 == 0 ];then
+	if [ $year%100 == 0 ];then
+		if [ $year%400 == 0 ];then
+			leap="true";
+		leap="false";
+		fi
+	else
+		leap="true";
+	fi
+else
+leap="false";
+fi
+echo $leap;
