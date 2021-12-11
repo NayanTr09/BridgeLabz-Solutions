@@ -7,12 +7,9 @@ read day
 m1="march"
 m2="june"
 d=20
-if [ $month == $m1 ] || [ $month == $m2 ]; then
-	if [ $day == $d ]; then
+if [ $month == $m1 ] || [ $month == $m2 ] && [ $day -ge $d ] && [ $day -le 30 ] 
+then
 		echo "true";
-	elif [ $day != $d ]; then
-		echo "false";
-	fi
-else
+	else
 	echo "false";
 fi
